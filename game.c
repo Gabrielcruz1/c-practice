@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
     int secrectNumber = 5;
     int guess;
     int guessCount = 0;
@@ -21,8 +20,11 @@ int main()
     if(outOfGuesses == 1){
         printf("Out of Guesses");
     } else {
-
     printf("YOU WIN");
     }
     return 0;
-}
+};
+
+
+
+
