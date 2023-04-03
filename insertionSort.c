@@ -24,3 +24,30 @@ void insertion_sort(int a[], int length){
         a[j + 1] = key;
     }
 }
+
+
+
+void insertion_sort(int arr[], int length)
+{
+    for(int i = 1; i < length; i++){
+        int temp = arr[i];
+        int j = i -1;
+
+        while(j >= 0 && arr[j] > temp){
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[ j + 1] = temp;
+    }
+}
+//Javascript
+// function insertionSort(arr) {
+//     for (let i = 1; i < arr.length; i++) {
+//         currentVal = arr[i];
+//         for (let j = i - 1; j >= 0 && arr[j] > currentVal; j--) {
+//             arr[j + 1] = arr[j]
+//         }
+//         arr[j + 1] = currentVal
+//     }
+//     return arr;
+// }
