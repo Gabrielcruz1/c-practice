@@ -12,21 +12,6 @@ int main(){
 };
 
 
-void insertion_sort(int a[], int length){
-    for(int i = 1; i < length; i++){
-        int key = a[i];
-        int j = i -1;
-
-        while(j >= 0 && a[j] > key){
-            a[j + 1] = a[j];
-            j = j -1;
-        }
-        a[j + 1] = key;
-    }
-}
-
-
-
 void insertion_sort(int arr[], int length)
 {
     for(int i = 1; i < length; i++){
@@ -40,6 +25,15 @@ void insertion_sort(int arr[], int length)
         arr[ j + 1] = temp;
     }
 }
+
+
+void sort( int arr, int len){
+    for(int i = 2; i <= len; i++){
+        insertion_sort(arr , 2);
+        int j = i - 1;
+    };
+};
+
 //Javascript
 // function insertionSort(arr) {
 //     for (let i = 1; i < arr.length; i++) {
